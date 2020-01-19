@@ -11,6 +11,7 @@ export interface CdkEmrClustersStackProps extends cdk.StackProps {
     readonly clusterName: string;
     readonly hostedZoneId: string;
     readonly recordName: string;
+    readonly ec2KeyName: string;
 }
 
 export class CdkEmrClustersStack extends cdk.Stack {
@@ -94,7 +95,7 @@ export class CdkEmrClustersStack extends cdk.Stack {
                 instanceType: 'r5.xlarge',
                 name: 'Core'
             },
-            ec2KeyName: 'aurbac-virginia',
+            ec2KeyName: props.ec2KeyName,
             additionalMasterSecurityGroups: [
                 sg.securityGroupName
             ],
