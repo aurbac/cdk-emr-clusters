@@ -1,6 +1,6 @@
 # CDK EMR Cluster
 
-![CDK EMR Cluster](images/diagram-architecture.png)
+![CDK EMR Cluster](images/architecture.png)
 
 ## Useful commands
 
