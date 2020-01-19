@@ -115,8 +115,7 @@ export class CdkEmrClustersStack extends cdk.Stack {
         ]
     });
 
-    new cdk.CfnOutput(this, 'SshEmrCluster', { value: `ssh -C -D 8157 hadoop@${cluster.attrMasterPublicDns}` });
-    new cdk.CfnOutput(this, 'StartFlinkRuntime', { value: 'flink-yarn-session -n 2 -s 4 -tm 16GB -d' });
+    new cdk.CfnOutput(this, 'SshEmrCluster', { value: `ssh -i ${props.ec2KeyName}.pem hadoop@${props.recordName}` });
     
   }
 }
