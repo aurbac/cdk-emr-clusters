@@ -2,6 +2,12 @@
 
 ![CDK EMR Clusters](images/architecture.png)
 
+Copy and update **cdk.json** file with your own parameters.
+
+``` bash
+cp cdk.json.sample cdk.json
+```
+
 ## Useful commands
 
  * `npm run build`   compile typescript to js
