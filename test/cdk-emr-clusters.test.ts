@@ -5,7 +5,7 @@ import CdkEmrClusters = require('../lib/cdk-emr-clusters-stack');
 test('Empty Stack', () => {
     const app = new cdk.App();
     // WHEN
-    const stack = new CdkEmrClusters.CdkEmrClustersStack(app, 'MyTestStack');
+    const stack = new CdkEmrClusters.CdkEmrClustersStack(app, 'MyTestStack', { clusterName: "my-emr-cluster", hostedZoneId: "XXXXXXXXX", recordName: "my-emr-cluster.domain.com" });
     // THEN
     expectCDK(stack).to(matchTemplate({
       "Resources": {}

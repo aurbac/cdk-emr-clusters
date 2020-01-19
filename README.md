@@ -1,8 +1,6 @@
-# Welcome to your CDK TypeScript project!
+# CDK EMR Cluster
 
-This is a blank project for TypeScript development with CDK.
-
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
+![CDK EMR Cluster](images/diagram-architecture.png)
 
 ## Useful commands
 
