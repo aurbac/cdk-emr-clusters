@@ -1,9 +1,0 @@
-{
-  "app": "npx ts-node bin/cdk-emr-clusters.ts",
-  "context": {
-    "cluster_name": "my-new-cluster",
-    "hosted_zone_id": "XXXXXXXXX",
-    "record_name": "my-emr-cluster.domain.com",
-    "ec2_key_name": "key_name"
-  }
-}
